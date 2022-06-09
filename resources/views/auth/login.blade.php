@@ -4,9 +4,7 @@
     <form method="post" action="{{ route('login.perform') }}">
         
         <input type="hidden" name="_token" value="{{ csrf_token() }}" />
-        <i class="fa-solid fa-comment-sms fa-3x"></i>
-        
-        <h1 class="h3 mb-3 fw-normal">Login</h1>
+        <h1 class="h3 mb-3 fw-normal">Login <i class="fas fa-sms fa-2x"></i></h1>
 
         @include('layouts.partials.messages')
 
